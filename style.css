@@ -1,0 +1,480 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: left;
+	font-family: "Segoe UI", sans-serif;
+	color: black;
+}
+
+
+section {
+ padding: 3.2rem 0;
+}
+button {
+ font-size: 1.5rem;
+ font-family: inherit;
+ text-transform: capitalize;
+ border-radius: 0.5rem;
+ letter-spacing: 1px;
+ outline: none;
+ cursor: pointer;
+ margin: 1rem;
+ padding: 0.5rem 2rem;
+}
+h1 {
+ font-family: "Segoe UI", sans-serif;
+ text-align: center;
+ font-size: 2.5rem;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
+hr {
+ width: 40%;
+ margin: 10px auto 40px;
+ border: 2px solid #cc1512;
+}
+
+h3 {
+ text-transform: uppercase;
+ width: 100%;
+ margin-bottom: 1rem;
+ font-size: 1.4rem;
+}
+
+p {
+ font-size: 1.7rem;
+}
+/*
+font-family and sizing
+header
+		primary slogan : 'Newsreader', Extra-light 200  6rem
+		seconday slogan : Segoe UI , regular 3rem
+other sections
+	 main header :  Segoe UI , Semibold , 3rem
+	 regular text , button :  Segoe UI , regular , 2.5rem
+	 form : Segoe UI  , segoe UI , semibold , 3rem
+	 footer : Seoge UI , Regular , 2rem
+*/
+
+/* ===============================
+============ HERO SECTION ========
+================================== ***/
+
+.mainHeader {
+ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+	 url("./design/Assets/1Hero/hero-image.jpg") no-repeat center center fixed;
+ background-size: cover;
+ height: 100%;
+ height: 100vh;
+ color: white;
+ margin-top: -6rem;
+}
+
+/* ==== nav bar ==== */
+.navBar,
+.desktop-nav-links {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 1rem;
+}
+.navBar {
+ z-index: 10;
+ margin: 0;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ background-color: rgb(20, 20, 20, 0.8);
+}
+.navBar img {
+ width: 5rem;
+ cursor: pointer;
+ margin: 0.5rem 0;
+}
+.desktop-nav-links li {
+ margin: 0 1rem;
+ list-style: none;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ cursor: pointer;
+ padding: 0 0 0.1rem 0;
+}
+.desktop-nav-links li:hover {
+ border-bottom: 3px solid #cf4217;
+}
+.desktop-nav-link {
+ color: white;
+ text-decoration: none;
+}
+#hamburger,
+#responsive-overlay {
+ display: none;
+}
+
+/* ==== slogan ==== */
+.slogan {
+ max-width: 90%;
+ margin: 6rem auto;
+}
+.slogan h1 {
+ text-align: left;
+ padding-top: 8rem;
+ font-size: 3.5rem;
+ font-family: "Newsreader";
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ word-spacing: 5px;
+ margin: 0 auto 3rem;
+ color: white;
+}
+.slogan h2 {
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 2rem;
+ color: white;
+}
+
+/* ==== buttons ==== */
+.heroButtons {
+ max-width: 90%;
+ margin: auto;
+ padding-bottom: 8rem;
+}
+
+.buttonType-1 {
+ background-color: Transparent;
+ border: 3px solid #cf4217;
+ color: #cf4217;
+}
+.buttonType-2,
+.buttonType-1:hover {
+ border: 3px solid #cf4217;
+ background-color: #cf4217;
+ color: white;
+}
+.buttonType-2:hover {
+ border: 3px solid #cf1717;
+ background-color: #cf1717;
+}
+
+/* ========== footer ========== */
+footer {
+ font-family: inherit;
+ background-color: #e8e8e8;
+ color: black;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 0.7rem;
+ padding: 1rem 0;
+}
+footer p {
+ font-size: 0.8rem;
+}
+.social-media-icons {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1rem;
+}
+.social-media-icons img {
+ width: 1.5rem;
+}
+
+/* ===============================
+============ SERVICES SECTION ========
+================================== ***/
+
+/** mobile view **/
+
+#services_section p {
+ margin-bottom: 2rem;
+}
+
+#services_section h3,
+#services_section p {
+ text-align: center;
+ width: 90%;
+}
+
+#services_section {
+ background-color: #e8e8e8;
+}
+#services_paragraph {
+ margin: 2rem auto 3rem;
+ max-width: 1250px;
+}
+#flex-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin: 2rem auto 0;
+ padding: 0 0 2rem 0;
+ max-width: 1250px;
+}
+.items {
+ background-color: #dbdada;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 33%;
+ margin: 1rem;
+ border-radius: 5px;
+}
+#flex-container img {
+ height: 6rem;
+ width: 6rem;
+ padding: 1rem 0;
+ margin: 1rem auto;
+}
+
+/* ===============================
+============ TOP PRODUCT SECTION ========
+================================== ***/
+
+.header0 {
+  font-size: 1.5rem;
+  margin: 0.5rem auto 0 auto;
+  text-align: center;
+}
+
+hr {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid;
+  color: #cc1512;
+  background-color: #cc1512;
+  height: 0.06rem;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0.313rem;
+  background-color: #f5f5f5;
+}
+
+.tpimg {
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  width: 22rem;
+  margin-left: 1rem;
+	margin-top: 21px;
+
+}
+
+.header {
+  font-size: 1.1rem;
+  text-align: left;
+  margin: 0.4rem auto 0 1rem;
+}
+
+.txt2 {
+  font-size: 0.8rem;
+  text-align: left;
+  font-weight: normal;
+  margin: 0.4rem auto 0 1rem;
+}
+
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  margin: 1rem 16rem 1rem 1rem;
+  padding: 0.5rem 0;
+  border: solid #cf4217 3px;
+  color: white;
+  background: #cf4217;
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 150px;
+}
+
+.btn:hover {
+  background: #f27435;
+  background-image: -webkit-linear-gradient(top, #f27435, #ed851d);
+  background-image: -moz-linear-gradient(top, #f27435, #ed851d);
+  background-image: -ms-linear-gradient(top, #f27435, #ed851d);
+  background-image: -o-linear-gradient(top, #f27435, #ed851d);
+  background-image: linear-gradient(to bottom, #f27435, #ed851d);
+  text-decoration: none;
+}
+
+.btn2 {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  color: #cf4217;
+  background: Transparent;
+  border: solid #cf4217 3px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  margin: 1rem 13rem 1rem 1rem;
+  padding: 0.5rem 1.8rem;
+  width: 200px;
+}
+
+.btn2:hover {
+  background: #f0a782;
+  background-image: -webkit-linear-gradient(top, #f0a782, #fcba79);
+  background-image: -moz-linear-gradient(top, #f0a782, #fcba79);
+  background-image: -ms-linear-gradient(top, #f0a782, #fcba79);
+  background-image: -o-linear-gradient(top, #f0a782, #fcba79);
+  background-image: linear-gradient(to bottom, #f0a782, #fcba79);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    width: 100%!important;
+  }
+  hr {
+      width: 85%;
+      margin-top: 5px!important;
+  }
+
+	.tpimg{
+
+		margin-top: 21px;
+	}
+}
+body{
+    background-color: #f5f5f5;
+}
+@media only screen and (min-width: 1250px) {
+  .row {
+    padding: 0px 335px;
+  }
+}
+
+/* ===============================
+============ CITIES SECTION ========
+================================== ***/
+
+.cities-section {
+ background-color: #e8e8e8;
+}
+
+.cities {
+ margin: auto;
+ display: flex;
+ justify-content: space-evenly;
+ padding: 1rem 0;
+ gap: 2rem;
+}
+
+.img-left,
+.img-right {
+ width: 450px;
+ height: auto;
+}
+
+.cities-section p {
+ font-weight: 450;
+ line-height: 3.25rem;
+}
+
+.cities-title {
+ padding: 0 8rem;
+ font-weight: bold;
+ margin-top: 1.25rem;
+}
+
+.icon {
+ width: 2rem;
+ height: 2rem;
+ float: left;
+ margin: 0.5rem;
+}
+
+.breaking-hr {
+ border-style: dashed none none none;
+ border-width: 5px;
+ width: 30%;
+}
+
+/* ===============================
+============ FEEDBACK SECTION ========
+================================== ***/
+
+/* ========== desktop view ============ */
+
+#feedback-section {
+ text-align: center;
+ background-color: #f5f5f5;
+ padding: 50px 2rem;
+}
+
+/* #feedback-section hr {
+ width: 70%;
+ margin: 10px auto 40px;
+ border: 1px solid #cc1512;
+} */
+
+/* =========== forms==============  */
+.customFooter {
+ margin-top: 8rem;
+ padding: 2rem;
+}
+
+.form-container {
+ margin: auto;
+ text-align: center;
+ padding: 2rem;
+ text-transform: capitalize;
+ font-size: 1.2rem;
+ font-family: inherit;
+}
+
+.input-element {
+ /* margin: 0.5rem; */
+ padding: 0.5rem;
+}
+
+.input-element label {
+ width: 5rem;
+ margin: 0 2rem;
+ padding: 0.4rem 0;
+ display: inline-block;
+ text-align: left;
+}
+
+.input-element input,
+.input-element textarea {
+ font-size: inherit;
+ font-family: inherit;
+ padding: 0.3rem;
+ width: 20rem;
+ outline: none;
+ border: 2px solid rgb(180, 180, 180);
+}
+.input-element input:hover,
+.input-element textarea:hover {
+ border: 2px solid #cc1512;
+}
+
+form button {
+ padding: 0.4rem 1.8rem;
+}
+
+/* ========== mobile view ============ */
+@media (max-width: 600px) {
+ .input-element input,
+ .input-element textarea {
+	 width: 100%;
+ }
+}
